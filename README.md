@@ -20,7 +20,7 @@ git clone https://github.com/yourusername/HangMan.git
 ```
 Navigate into the directory:
 ```
-cd hangman-game
+cd HangMan
 ```
 Usage:
 Run the game by executing:
