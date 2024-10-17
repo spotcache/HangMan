@@ -54,18 +54,23 @@ def hangman():
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
-        print(f'You died, sorry 😞. The word was {word}.')
-        time.sleep(6)
+        print(f'Game Over, sorry 😞. The word was {word}.')
+        time.sleep(5)
         os.system('cls')
     else:
         print(f'YAY 🎉! You guessed the word {word}!')
-        time.sleep(6)
+        time.sleep(5)
         os.system('cls')
 
-while True:
-    hangman()
-    replay = input("Would you like to play again? (y/n): ").lower()
-    if replay == 'y':
-        continue
-    else:
-        sys.exit("Bye bye then... 👋")
+def play_again():
+    while True:
+        replay = input("Would you like to play again? (y/n): ").lower()
+        if replay == 'y':
+            hangman()
+        elif replay == 'n':
+            sys.exit("Bye bye then... 👋")
+        else:
+            print("Invalid input. Please enter 'y' or 'n'.")
+
+hangman()
+play_again()
