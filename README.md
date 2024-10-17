@@ -16,7 +16,7 @@ Welcome to the Hangman game! This is a simple console-based implementation of th
 ## Installation
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/hangman-game.git
+git clone https://github.com/yourusername/HangMan.git
 ```
 Navigate into the directory:
 ```
